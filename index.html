@@ -342,13 +342,13 @@
     /* ===== RESPONSIVE ===== */
     @media (max-width: 640px) {
       .container { padding-top: 210px; }
-      .thumb, .thumb-placeholder { width: 64px; height: 48px; border-radius: 10px; }
-      .song-title { font-size: 13px; }
+      .thumb, .thumb-placeholder { display: none !important; }
+      .song-title { font-size: 14px; white-space: normal; line-height: 1.3; margin-bottom: 6px; }
       .filter-btn { min-width: calc(50% - 4px); font-size: 12px; }
-      .card { gap: 10px; padding: 10px; }
-      .info { min-width: 0; }
-      button.play { width: 36px; height: 36px; font-size: 12px; flex-shrink: 0; }
-      .playlist-pill { font-size: 10px; padding: 3px 8px; }
+      .card { gap: 10px; padding: 12px 14px; }
+      .info { min-width: 0; flex: 1; }
+      button.play { width: 40px; height: 40px; font-size: 14px; flex-shrink: 0; }
+      .playlist-pill { font-size: 11px; padding: 4px 10px; }
     }
   </style>
 </head>
