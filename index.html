@@ -342,9 +342,13 @@
     /* ===== RESPONSIVE ===== */
     @media (max-width: 640px) {
       .container { padding-top: 210px; }
-      .thumb, .thumb-placeholder { width: 76px; height: 54px; }
-      .song-title { font-size: 14px; }
+      .thumb, .thumb-placeholder { width: 64px; height: 48px; border-radius: 10px; }
+      .song-title { font-size: 13px; }
       .filter-btn { min-width: calc(50% - 4px); font-size: 12px; }
+      .card { gap: 10px; padding: 10px; }
+      .info { min-width: 0; }
+      button.play { width: 36px; height: 36px; font-size: 12px; flex-shrink: 0; }
+      .playlist-pill { font-size: 10px; padding: 3px 8px; }
     }
   </style>
 </head>
@@ -425,7 +429,7 @@
 
     function getYouTubeID(url) {
       if (!url) return null;
-      const m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/);
+      const m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
       return m ? m[1] : null;
     }
 
@@ -532,4 +536,4 @@
   </script>
 
 </body>
-</html>
+</html> en las lentas no me sale el boton rojo esa aprte creoq eu no es responsive
